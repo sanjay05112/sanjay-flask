@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Update</title>
+    </head>
+    <body>
+        <h1>Update</h1>
+        <form method="post" action="/update/{{d.0}}">
+            <table>
+                <tr><td>vehiclenum:</td>
+                    <td><input type="varchar" name="vehiclenum" value="{{d.1}}"></tr></td>
+            
+                <tr><td>model:</td>
+                    <td><input type="text" name="model" value="{{d.2}}"></tr></td>
+            
+                <tr><td>owner:</td>
+                    <td><input type="text" name="owner" value="{{d.3}}"></tr></td>
+
+                <tr><td>contact:</td>
+                    <td><input type="int" name="contact" value="{{d.4}}"></tr></td>
+            
+                <tr><td></td>
+                    <td><input type="submit" name="send" value="Update"/></tr><td/>
+            </table>
+        </form>
+    </body>
+</html>
